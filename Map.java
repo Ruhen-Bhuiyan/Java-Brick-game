@@ -10,7 +10,7 @@ public class Map {
 	for(int i=0;i<arr.length;i++){
 	for(int j=0;j<arr[0].length;j++){
 	arr[i][j]=1;
-	}
+	         }
 	}
 	theWidth=540/col;
 	theHeight=150/row;
@@ -25,7 +25,7 @@ public class Map {
 				g.setColor(Color.red);
 				g.drawRect(j*theWidth+60,i*theHeight+40,theWidth,theHeight);
 				}
-		}
+		         }
 		}
 		}
 	public void setValue(int value,int row,int col){
