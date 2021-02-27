@@ -1,7 +1,6 @@
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
-
 public class Map {
 	public int arr[][];
 	public int theWidth;
@@ -15,8 +14,7 @@ public class Map {
 	}
 	theWidth=540/col;
 	theHeight=150/row;
-	}
-	
+	}	
 	public void letsdraw(Graphics2D g){
 		for(int i=0;i<arr.length;i++){
 		for(int j=0;j<arr[0].length;j++){
