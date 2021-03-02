@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -29,6 +30,7 @@ public class Game extends JPanel implements KeyListener, ActionListener{
 		setFocusTraversalKeysEnabled(false);
 		timer=new Timer(delay,this);
 		timer.start();
+		
 	}
 	public void paint(Graphics g){
 		g.setColor(Color.black);
@@ -38,14 +40,11 @@ public class Game extends JPanel implements KeyListener, ActionListener{
 		g.fillRect(0,0,2,1350);
 		g.fillRect(0,0,1350,3);
 		g.fillRect(1350,0,1,592);
-		
 		g.setColor(Color.white);
 		g.setFont(new Font("serif",Font.BOLD,25));
 		g.drawString(""+score,590,30);
-		
 		g.setColor(Color.pink);
 		g.fillRect(player1,590,100,8);
-		
 		g.setColor(Color.yellow);
 		g.fillOval(ballpositionx,ballpositiony,20,20);
 		if(ballpositiony>1350){
@@ -55,7 +54,6 @@ public class Game extends JPanel implements KeyListener, ActionListener{
 			g.setColor(Color.RED);
 			g.setFont(new Font("serif",Font.BOLD,30));
 			g.drawString("Game over:",190,300);
-
 			g.setFont(new Font("serif",Font.BOLD,20));
 			g.drawString("Press Enter to restart:",230,350);
 			}
