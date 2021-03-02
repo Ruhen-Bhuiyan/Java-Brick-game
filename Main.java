@@ -1,8 +1,6 @@
 import javax.swing.JFrame;
 public class Main {
-	public static void main(String[] args) {
-		
-		
+	public static void main(String[] args) {	
 		JFrame object = new JFrame();
 		Game game=new Game();
 		object.setBounds(10,10,700,600);
