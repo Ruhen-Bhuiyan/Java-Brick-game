@@ -12,6 +12,7 @@ public class Map {
 	arr[i][j]=1;
 	         }
 	}
+		
 	theWidth=540/col;
 	theHeight=150/row;
 	}	
@@ -28,6 +29,7 @@ public class Map {
 		         }
 		}
 		}
+	
 	public void setValue(int value,int row,int col){
 		arr[row][col]=value;
 		}
