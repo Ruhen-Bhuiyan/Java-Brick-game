@@ -7,6 +7,7 @@ public class Main {
 		object.setTitle("Let's play");
 		object.setResizable(true);
 		object.setVisible(true);
+		
 		object.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		object.add(game);
 	}
